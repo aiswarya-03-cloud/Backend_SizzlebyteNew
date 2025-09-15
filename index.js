@@ -12,7 +12,7 @@ const app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin:["http://localhost:5173","https://frontend-vercelsizzle-lchr.vercel.app/"],
+    origin:[process.env.CLIENT_DOMAIN],
 
     
     methods: ["GET","PUT","POST","DELETE", "OPTIONS"],
