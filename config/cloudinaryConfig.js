@@ -6,6 +6,7 @@ console.log('Cloudinary Config:');
 console.log('CLOUDINARY_CLOUD_NAME:', process.env.CLD_NAME);
 console.log('CLOUDINARY_API_KEY:', process.env.CLD_API_KEY);
 console.log('CLOUDINARY_API_SECRET:', process.env.CLD_API_SECRET);
+console.log('MONGOOSE_URI:', process.env.MONGO_URI);
 
 
     // Configuration
