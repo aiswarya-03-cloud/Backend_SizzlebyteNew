@@ -52,13 +52,13 @@ export const userSignup = async (req, res, next) => {
 
         const { name, email, password, phone, profilePic } = req.body;
 
-const user = await User.findOne({ email });
-// after verifying credentials
-await Cart.updateOne(
-  { userId: user._id },
-  { $set: { cartItems: [] } }, // reset cart
-  { upsert: true }
-);
+// const user = await User.findOne({ email });
+// // after verifying credentials
+// await Cart.updateOne(
+//   { userId: user._id },
+//   { $set: { cartItems: [] } }, // reset cart
+//   { upsert: true }
+// );
 
         if (!name || !email || !password) {
             return res.status(400).json({ message: "all fields are required" });
