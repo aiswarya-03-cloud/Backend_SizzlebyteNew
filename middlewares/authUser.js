@@ -94,6 +94,7 @@ export const authUser = (req, res, next) => {
         console.log("secret key--",process.env.JWT_SK)
         console.log("cookoies--",req.cookies.token)
         const { token } = req.cookies;
+         console.log("Token from cookies--", req.cookies, token)
 
 
         if (!token) {
